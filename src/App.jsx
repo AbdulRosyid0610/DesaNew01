@@ -16,7 +16,7 @@ import Umkm from "./pages/Umkm";                       // <-- Import Umkm
 import UmkmDetail from "./pages/UmkmDetail";           // <-- Import UmkmDetail (BARU)
 import CCTV from "./pages/CCTV";
 import Layanan from "./pages/Layanan";
-import Login from "./pages/Login/login";
+import Login from "./pages/Login/Login";
 
 // Admin
 import AdminDashboard from "./Admin/AdminDashboard";
