@@ -1,0 +1,425 @@
+/* ========================================
+   BERANDA / HERO SECTION
+   ======================================== */
+.beranda-hero {
+  background: linear-gradient(165deg, #f0faff 0%, #ffffff 100%);
+  padding: 40px 0 60px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.beranda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  min-height: 520px;
+}
+
+/* ========================================
+   KIRI - TEKS
+   ======================================== */
+.beranda-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Badge */
+.beranda-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(110, 200, 230, 0.12);
+  color: var(--sky-dark, #4ab3d4);
+  padding: 6px 18px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(110, 200, 230, 0.2);
+}
+
+.beranda-badge i {
+  font-size: 0.75rem;
+}
+
+/* Title */
+.beranda-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.beranda-title .highlight {
+  color: var(--sky, #6ec8e6);
+  background: linear-gradient(135deg, #4ab3d4, #6ec8e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.beranda-title .energy-text {
+  color: #1e2b3a;
+  background: var(--sun-light, #fef2c0);
+  padding: 0 12px;
+  border-radius: 16px;
+  display: inline-block;
+  -webkit-text-fill-color: #1e2b3a;
+  line-height: 1.3;
+}
+
+/* Description */
+.beranda-desc {
+  font-size: 1.15rem;
+  color: #3e576b;
+  max-width: 480px;
+  line-height: 1.8;
+  margin: 4px 0;
+}
+
+/* Actions */
+.beranda-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.beranda-badge-energy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  box-shadow: var(--shadow-md, 0 12px 30px rgba(0, 40, 60, 0.08));
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1e2b3a;
+  border: 1px solid rgba(110, 200, 230, 0.15);
+}
+
+.beranda-badge-energy i {
+  color: var(--sun, #f9d342);
+  font-size: 1.1rem;
+}
+
+/* Mini Stats */
+.beranda-stats-mini {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.stat-mini {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-mini-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark, #1e2b3a);
+  line-height: 1.2;
+}
+
+.stat-mini-label {
+  font-size: 0.75rem;
+  color: #78909c;
+  font-weight: 500;
+}
+
+.stat-mini-divider {
+  width: 1px;
+  height: 30px;
+  background: #d9eaf2;
+}
+
+/* ========================================
+   KANAN - VISUAL CARDS
+   ======================================== */
+.beranda-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  position: relative;
+}
+
+.visual-card {
+  background: white;
+  padding: 24px 20px;
+  border-radius: var(--radius-lg, 24px);
+  box-shadow: var(--shadow-md, 0 12px 30px rgba(0, 40, 60, 0.08));
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid rgba(110, 200, 230, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.visual-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 40, 60, 0.12);
+}
+
+.visual-card .visual-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* Card Colors */
+.solar-card .visual-icon {
+  background: linear-gradient(135deg, #fef2c0, #f9d342);
+  color: #7a5f1a;
+}
+
+.wind-card .visual-icon {
+  background: linear-gradient(135deg, #d4eff9, #6ec8e6);
+  color: #1a5f7a;
+}
+
+.green-card .visual-icon {
+  background: linear-gradient(135deg, #e8f5e9, #66bb6a);
+  color: #1e5a1e;
+}
+
+.visual-card .visual-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-card .visual-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark, #1e2b3a);
+  line-height: 1.2;
+}
+
+.visual-card .visual-label {
+  font-size: 0.75rem;
+  color: #78909c;
+  font-weight: 500;
+}
+
+/* Card Positions */
+.solar-card {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.wind-card {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.green-card {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+/* ========================================
+   DEKORASI
+   ======================================== */
+.visual-decoration {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 0;
+}
+
+.decoration-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(110, 200, 230, 0.08), transparent 70%);
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.decoration-circle.small {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(249, 211, 66, 0.08), transparent 70%);
+  top: 40px;
+  right: 60px;
+}
+
+/* ========================================
+   WAVE DECORATION
+   ======================================== */
+.beranda-wave {
+  margin-top: -2px;
+  position: relative;
+  z-index: 1;
+}
+
+.beranda-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+  .beranda-grid {
+    gap: 40px;
+  }
+  
+  .beranda-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .beranda-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .beranda-text {
+    align-items: center;
+  }
+
+  .beranda-badge {
+    align-self: center;
+  }
+
+  .beranda-desc {
+    max-width: 100%;
+  }
+
+  .beranda-actions {
+    justify-content: center;
+  }
+
+  .beranda-stats-mini {
+    justify-content: center;
+  }
+
+  .beranda-visual {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .beranda-hero {
+    padding: 20px 0 40px;
+  }
+
+  .beranda-title {
+    font-size: 2.2rem;
+  }
+
+  .beranda-desc {
+    font-size: 1rem;
+  }
+
+  .beranda-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .beranda-actions .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .beranda-badge-energy {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .beranda-stats-mini {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stat-mini-divider {
+    display: none;
+  }
+
+  .visual-card {
+    padding: 16px 14px;
+  }
+
+  .visual-card .visual-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+
+  .visual-card .visual-value {
+    font-size: 1.1rem;
+  }
+
+  /* Reset grid positions for mobile */
+  .solar-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .wind-card {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .green-card {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 400px) {
+  .beranda-title {
+    font-size: 1.8rem;
+  }
+
+  .beranda-badge {
+    font-size: 0.7rem;
+    padding: 4px 14px;
+  }
+
+  .beranda-badge-energy {
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+
+  .visual-card {
+    padding: 12px 12px;
+    gap: 12px;
+  }
+
+  .visual-card .visual-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .visual-card .visual-value {
+    font-size: 0.95rem;
+  }
+
+  .visual-card .visual-label {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,46 @@
+export const statistikData = {
+  totalPenduduk: 6192,
+  rasioGender: 102.22,
+  kepadatan: 6192,
+  kepalaKeluarga: 1.210,
+  kelahiranKematian: [
+    { tahun: 2022, kelahiran: 45, kematian: 28 },
+    { tahun: 2023, kelahiran: 52, kematian: 25 },
+    { tahun: 2024, kelahiran: 48, kematian: 30 },
+    { tahun: 2025, kelahiran: 55, kematian: 22 },
+    { tahun: 2026, kelahiran: 58, kematian: 26 },
+  ],
+  pertumbuhanPenduduk: [
+    { tahun: 2022, kelahiran: 45, kematian: 28, total: 4450, laju: '-' },
+    { tahun: 2023, kelahiran: 52, kematian: 25, total: 4680, laju: '+5.17%' },
+    { tahun: 2024, kelahiran: 48, kematian: 30, total: 4890, laju: '+4.49%' },
+    { tahun: 2025, kelahiran: 55, kematian: 22, total: 5070, laju: '+3.68%' },
+    { tahun: 2026, kelahiran: 58, kematian: 26, total: 5234, laju: '+3.23%' },
+  ],
+  pendidikan: [
+    { label: 'D1-D3', value: '87 Jiwa' },
+    { label: 'SMA/SMK', value: '1.420 Jiwa' },
+    { label: 'SD/Sederajat', value: '1.150 Jiwa' },
+    { label: 'S1/D4', value: '520 Jiwa' },
+    { label: 'SMP/Sederajat', value: '980 Jiwa' },
+    { label: 'Tidak Sekolah', value: '230 Jiwa' },
+  ],
+  pekerjaan: [
+    { label: 'Petani & Pekebun', value: '1.820 Jiwa' },
+    { label: 'Pedagang / Wirausaha', value: '890 Jiwa' },
+    { label: 'Mengurus Rumah Tangga', value: '720 Jiwa' },
+    { label: 'Pelajar & Mahasiswa', value: '650 Jiwa' },
+    { label: 'Karyawan Swasta', value: '560 Jiwa' },
+    { label: 'PNS & Pensiunan', value: '240 Jiwa' },
+  ],
+  bpjs: [
+    { label: 'Non-PBI (Mandiri)', value: '87 Jiwa', persen: '55.1%' },
+    { label: 'PBI (Bantuan Pemerintah)', value: '50 Jiwa', persen: '31.6%' },
+    { label: 'Belum Terdaftar', value: '21 Jiwa', persen: '13.3%' },
+  ],
+  dokumen: [
+    { label: 'Kepemilikan KTP Elektronik', value: '4.815', persen: '92%' },
+    { label: 'Kartu Keluarga (KK)', value: '1.420 KK', persen: '96%' },
+    { label: 'Akta Kelahiran Anak', value: '1.180', persen: '88%' },
+  ],
+}

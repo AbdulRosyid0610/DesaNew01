@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9fcff;
+  color: #1e2b3a;
+  line-height: 1.6;
+}
+
+:root {
+  --sky: #6ec8e6;
+  --sky-light: #d4eff9;
+  --sky-dark: #4ab3d4;
+  --sun: #f9d342;
+  --sun-soft: #fef2c0;
+  --dark: #1e2b3a;
+  --card: #ffffff;
+  --shadow: 0 12px 30px rgba(0, 40, 60, 0.08);
+  --radius: 24px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-section {
+  padding: 50px 0 60px;
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.section-sub {
+  color: #3e576b;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.badge-sun {
+  background: var(--sun-soft);
+  padding: 4px 12px;
+  border-radius: 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7a5f1a;
+  display: inline-block;
+}
+
+.badge-sky {
+  background: var(--sky-light);
+  padding: 4px 14px;
+  border-radius: 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1a5f7a;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--sky);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 40px;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 12px rgba(110, 200, 230, 0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #5ab8d6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(110, 200, 230, 0.4);
+}
+
+.card {
+  background: var(--card);
+  padding: 28px 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: 0.25s ease;
+  border: 1px solid rgba(110, 200, 230, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 60, 90, 0.08);
+}
+
+.card i {
+  font-size: 2.2rem;
+  color: var(--sky);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
